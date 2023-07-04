@@ -1,15 +1,28 @@
-<nav class="navbar">
-    <a href="#" class="logo">ARIANE PROJECT</a>
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
 
-    <div class="nav-links" >
-        <ul>
-            <li> <a  href="#" title="Accueil">Présentation</a></li>
-            <li> <a  href="#" title="Parcours">Consultations</a></li>
-            <li> <a  href="#" title="Expériences">Expériences</a></li>
-            <li> <a  href="#" title="Informations pratiques">Informations Pratiques</a></li>
+    <div class="container" >
+
+    <a class="navbar-brand text-uppercase fw-bold" href="#">
+        <span class="bg-primary bg-gradient p-1 rounded-3 text-light"> ARIANE </span>PROJECT</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="Accueil">Accueil</a></li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#" title="Parcours">Parcours</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="Expériences">Expériences</a></li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#" title="Informations pratiques">Informations Pratiques</a></li>
         </ul>
-
+        </div>
     </div>
 
-    <img src="{{ asset('img/menu1.jpg') }}" alt="menu hamburger" class="menuHamburger">
+   {# <img src="{{ asset('img/menu1.jpg') }}" alt="menu hamburger" class="menuHamburger">#}
 </nav>
