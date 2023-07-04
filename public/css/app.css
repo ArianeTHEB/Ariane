@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+
+   }
+
+header{
+    height: 50vh;
+    width: 100vw;
+    background-image: url("../img/91134-OIW122-947.jpg");
+    background-size: cover;
+}
+
+/*positionnement + taille de la nav bar*/
+.navbar{
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/*couleur des éléments a*/
+.navbar a{
+    color: #FFFFFF;
+}
+
+/*mise en forme du logo*/
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*alignement horizontal des items*/
+.navbar .nav-links ul{
+    display: flex;
+    }
+/*espace entre les items*/
+.navbar .nav-links ul li{
+    margin: 0 25px;
+}
+
+
+/*formatting menu hamburger */
+.navbar .menuHamburger{
+    display: none;
+    width: 35px;
+    position: absolute; /*permet de positionnner le menu où on veut*/
+    top: 40px;
+    right: 10px;
+
+}
+
+.mobile-menu{
+    margin-left: 0;
+
+}
+
+@media screen and (max-width: 900px) {
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: rgba(239, 154, 154, 0.48);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .menuHamburger{
+        display: block;
+    }
+
+
+    .nav-links .mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
